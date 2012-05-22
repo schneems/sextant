@@ -29,8 +29,6 @@ Then run `bundle install` and you're ready to start
 
 Visit `/rails/routes` in your app and you'll see your routes. It's that simple.
 
-![Screenshot]()
-
 Don't worry you can only see this info in development
 
 ## About
