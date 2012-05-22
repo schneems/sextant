@@ -1,10 +1,13 @@
 # Sextant
 
-Helps you find your route
+Helps you find your routes on a long Journey on Rails
 
 ## What
 
-Show routes in your app. Visit `http://localhost:3000/rails/routes` and you'll see an output similar to `rake routes`
+Show routes in your Rails app. Visit `http://localhost:3000/rails/routes` and you'll see an output similar to `rake routes`
+
+![Sextant Gem](http://media.tumblr.com/tumblr_m42lwz86aB1qevexf.png)
+
 
 ## Why?
 
