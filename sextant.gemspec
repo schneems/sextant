@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "sextant"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["schneems"]
-  s.date = "2012-05-22"
+  s.date = "2012-05-23"
   s.description = "Sextant is a Rails engine that quickly shows the routes available"
   s.email = "richard.schneeman@gmail.com"
   s.extra_rdoc_files = [
@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
     "config/routes.rb",
     "lib/sextant.rb",
     "lib/sextant/engine.rb",
+    "sextant.gemspec",
     "test/dummy/Rakefile",
     "test/dummy/app/controllers/application_controller.rb",
     "test/dummy/app/helpers/application_helper.rb",
@@ -77,8 +78,8 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<activesupport>, [">= 3.1"])
-      s.add_runtime_dependency(%q<rails>, [">= 3.1"])
+      s.add_runtime_dependency(%q<activesupport>, [">= 3.2"])
+      s.add_runtime_dependency(%q<rails>, [">= 3.2"])
       s.add_development_dependency(%q<rake>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<capybara>, [">= 0.4.0"])
@@ -87,8 +88,8 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rcov>, [">= 0"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
     else
-      s.add_dependency(%q<activesupport>, [">= 3.1"])
-      s.add_dependency(%q<rails>, [">= 3.1"])
+      s.add_dependency(%q<activesupport>, [">= 3.2"])
+      s.add_dependency(%q<rails>, [">= 3.2"])
       s.add_dependency(%q<rake>, [">= 0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_dependency(%q<capybara>, [">= 0.4.0"])
@@ -98,8 +99,8 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<simplecov>, [">= 0"])
     end
   else
-    s.add_dependency(%q<activesupport>, [">= 3.1"])
-    s.add_dependency(%q<rails>, [">= 3.1"])
+    s.add_dependency(%q<activesupport>, [">= 3.2"])
+    s.add_dependency(%q<rails>, [">= 3.2"])
     s.add_dependency(%q<rake>, [">= 0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
     s.add_dependency(%q<capybara>, [">= 0.4.0"])
