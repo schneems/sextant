@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
-gem "activesupport" , ">= 3.1"
-gem "rails"         , ">= 3.1"
+gem "activesupport" , ">= 3.2"
+gem "rails"         , ">= 3.2"
 
 
 
