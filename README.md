@@ -1,6 +1,6 @@
 # Sextant
 
-Helps you find your routes on a long Journey on Rails
+Helps you find your routes on a long Journey on Rails.
 
 ## What
 
@@ -8,6 +8,10 @@ Show routes in your Rails app. Visit `http://localhost:3000/rails/routes` and yo
 
 ![Sextant Gem](http://media.tumblr.com/tumblr_m42lwz86aB1qevexf.png)
 
+
+## The Future
+
+The core functionality of Sextant is now [merged into Rails 4.0](https://github.com/rails/rails/commit/8186754097e0cc54a8853f2a5c0d2b3fbf4ae059) under `rails/info/routes`. If you want this functionality in earlier rails use Sextant. I would like to improve that functionality and this gem is a good place to experiment. If you have ideas on functionality you would like, check the issues to make sure it hasn't been suggested before, and then create one, or send me a message [@schneems](http://twitter.com/schneems)
 
 ## Why?
 
