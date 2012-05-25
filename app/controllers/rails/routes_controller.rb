@@ -1,15 +1,15 @@
 class Rails::RoutesController < ApplicationController
   layout 'rails/routes'
 
-  before_filter :ensure_local
+  before_filter :restrict_to_development
 
   def index
     @routes = Sextant.format_routes
   end
 
   private
-  def ensure_local
-    return false if ActionView::Resolver.caching
+  def restrict_to_development
+    head(:bad_request) unless RAILS_ENV == "development"
   end
 
 end
