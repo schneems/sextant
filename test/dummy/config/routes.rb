@@ -2,6 +2,7 @@ Dummy::Application.routes.draw do
   resources :foo
   resources :bar
 
+  match '*a', :to => 'foo#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
