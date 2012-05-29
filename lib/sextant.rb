@@ -1,6 +1,6 @@
 require 'rails/application/route_inspector'
 require 'sextant/engine'
-require 'sextant/routing'
+require 'rails/routes'
 
 module Sextant
   def self.format_routes(routes = all_routes)
