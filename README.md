@@ -32,7 +32,7 @@ Then run `bundle install` and you're ready to start
 
 ### Optional for user of catch-all route in routes.rb:
 
-Add sextant to your routes (config/routes.rb) before a catch-all route
+Add sextant to your routes (config/routes.rb) before catch-all routes
 
 ```ruby
 mount_sextant
