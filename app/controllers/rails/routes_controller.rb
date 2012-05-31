@@ -1,4 +1,4 @@
-class Rails::RoutesController < ApplicationController
+class Rails::RoutesController < Sextant.controller_base_class
   layout 'rails/routes'
 
   before_filter :ensure_local
