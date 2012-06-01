@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "sextant"
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["schneems"]
-  s.date = "2012-05-23"
+  s.date = "2012-06-01"
   s.description = "Sextant is a Rails engine that quickly shows the routes available"
   s.email = "richard.schneeman@gmail.com"
   s.extra_rdoc_files = [
