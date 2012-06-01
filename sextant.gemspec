@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "sextant"
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["schneems"]
@@ -28,12 +28,16 @@ Gem::Specification.new do |s|
     "app/views/layouts/rails/routes.html.erb",
     "app/views/rails/routes/index.html.erb",
     "config/routes.rb",
+    "lib/rails/routes.rb",
     "lib/sextant.rb",
     "lib/sextant/engine.rb",
     "sextant.gemspec",
     "test/dummy/Rakefile",
     "test/dummy/app/controllers/application_controller.rb",
+    "test/dummy/app/controllers/foo_controller.rb",
+    "test/dummy/app/foo_controller.rb",
     "test/dummy/app/helpers/application_helper.rb",
+    "test/dummy/app/views/foo/index.html",
     "test/dummy/app/views/layouts/application.html.erb",
     "test/dummy/config.ru",
     "test/dummy/config/application.rb",
