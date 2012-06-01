@@ -1,4 +1,4 @@
-class Rails::RoutesController < ApplicationController
+class Rails::RoutesController < ActionController::Base
   layout 'rails/routes'
 
   before_filter :ensure_local
