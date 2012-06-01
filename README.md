@@ -30,6 +30,15 @@ end
 
 Then run `bundle install` and you're ready to start
 
+### Optional for user of catch-all route in routes.rb:
+
+Add sextant to your routes (config/routes.rb) before catch-all routes
+
+```ruby
+mount_sextant
+match '*not_found' => 'errors#handle404'
+match "*path" => 'errors#handle404'
+```
 
 ## Use
 
