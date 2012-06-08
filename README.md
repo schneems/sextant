@@ -1,6 +1,6 @@
 # Sextant
 
-Helps you find your routes on a long Journey on Rails.
+Helps you find your routes on a long Journey on Rails, in Rails apps 3.2+.
 
 ## What
 
@@ -35,7 +35,7 @@ Then run `bundle install` and you're ready to start
 Add sextant to your routes (config/routes.rb) before catch-all routes
 
 ```ruby
-mount_sextant
+mount_sextant if Rails.env.development?
 match '*not_found' => 'errors#handle404'
 match "*path" => 'errors#handle404'
 ```
