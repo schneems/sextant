@@ -4,8 +4,9 @@ require 'rails/routes'
 
 module Sextant
   def self.format_routes(routes = all_routes)
+    # ActionDispatch::Routing::RoutesInspector.new.collect_routes(_routes.routes)
     inspector = Rails::Application::RouteInspector.new
-    inspector.format(routes, ENV['CONTROLLER']).join "\n"
+    inspector.collect_routes(routes)
   end
 
   def self.all_routes

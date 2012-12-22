@@ -1,3 +1,6 @@
+## 0.2.0
+* Render routes as HTML
+
 ## 0.1.3
 
 * Helper for mounting sextant in cases of catch all routes (via @menkel)
