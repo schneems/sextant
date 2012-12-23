@@ -1,5 +1,6 @@
-## 0.2.0
+## 1.0.0
 * Render routes as HTML
+* JS now uses asset pipeline
 
 ## 0.1.3
 

@@ -3,9 +3,8 @@ module ActionDispatch::Routing
     # Includes mount_sextant method for routes. This method is responsible to
     # generate all needed routes for sextant
     def mount_sextant
-      namespace :rails do
-        resources :routes, :only => [:index]
-      end
+      match "rails/routes" => "sextant/routes#index"
+      mount Sextant::Engine => "/sextant", :as => "sextant_engine"
     end
   end
 end
