@@ -1,5 +1,7 @@
 # Sextant
 
+[![Build Status](https://travis-ci.org/schneems/sextant.png?branch=master)](https://travis-ci.org/schneems/sextant)
+
 Helps you find your routes on a long Journey on Rails, in Rails apps 3.2+.
 
 ## What
