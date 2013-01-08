@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "sextant"
-  s.version = "0.1.3"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["schneems"]
-  s.date = "2012-06-01"
+  s.date = "2013-01-08"
   s.description = "Sextant is a Rails engine that quickly shows the routes available"
   s.email = "richard.schneeman@gmail.com"
   s.extra_rdoc_files = [
@@ -24,9 +24,14 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
-    "app/controllers/rails/routes_controller.rb",
-    "app/views/layouts/rails/routes.html.erb",
-    "app/views/rails/routes/index.html.erb",
+    "app/assets/javascripts/sextant/application.js",
+    "app/assets/javascripts/sextant/sextant.js",
+    "app/controllers/sextant/application_controller.rb",
+    "app/controllers/sextant/routes_controller.rb",
+    "app/views/layouts/sextant/application.html.erb",
+    "app/views/sextant/routes/_route.html.erb",
+    "app/views/sextant/routes/_route_wrapper.html.erb",
+    "app/views/sextant/routes/index.html.erb",
     "config/routes.rb",
     "lib/rails/routes.rb",
     "lib/sextant.rb",
@@ -59,13 +64,6 @@ Gem::Specification.new do |s|
     "test/dummy/public/500.html",
     "test/dummy/public/favicon.ico",
     "test/dummy/public/index.html",
-    "test/dummy/public/javascripts/application.js",
-    "test/dummy/public/javascripts/controls.js",
-    "test/dummy/public/javascripts/dragdrop.js",
-    "test/dummy/public/javascripts/effects.js",
-    "test/dummy/public/javascripts/prototype.js",
-    "test/dummy/public/javascripts/rails.js",
-    "test/dummy/public/stylesheets/.gitkeep",
     "test/dummy/script/rails",
     "test/integration/sextant_test.rb",
     "test/route_inspector_test.rb",
