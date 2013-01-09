@@ -1,4 +1,7 @@
-## 1.0.0
+## 0.2.1
+* Render without layout
+
+## 0.2.0
 * Render routes as HTML
 * JS now uses asset pipeline
 
