@@ -1,3 +1,4 @@
+
 # Configure Rails Envinronment
 ENV["RAILS_ENV"] = "test"
 
@@ -18,7 +19,8 @@ Rails.backtrace_cleaner.remove_silencers!
 
 # Configure capybara for integration testing
 require "capybara/rails"
-Capybara.default_driver   = :rack_test
+require 'capybara/poltergeist'
+Capybara.javascript_driver = :poltergeist
 Capybara.default_selector = :css
 
 

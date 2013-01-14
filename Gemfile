@@ -5,10 +5,13 @@ gem "rails"         , ">= 3.2"
 
 
 
+
+
 group :development, :test do
   gem 'rake'
   gem 'jeweler',  "~> 1.6.4"
   gem "capybara", ">= 0.4.0"
+  gem 'poltergeist'
   gem "sqlite3"
   gem "launchy",  "~> 2.1.0"
 end
