@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "sextant"
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["schneems"]
-  s.date = "2013-01-09"
+  s.date = "2013-01-14"
   s.description = "Sextant is a Rails engine that quickly shows the routes available"
   s.email = "richard.schneeman@gmail.com"
   s.extra_rdoc_files = [
@@ -85,6 +85,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rake>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<capybara>, [">= 0.4.0"])
+      s.add_development_dependency(%q<poltergeist>, [">= 0"])
       s.add_development_dependency(%q<sqlite3>, [">= 0"])
       s.add_development_dependency(%q<launchy>, ["~> 2.1.0"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
@@ -95,6 +96,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rake>, [">= 0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_dependency(%q<capybara>, [">= 0.4.0"])
+      s.add_dependency(%q<poltergeist>, [">= 0"])
       s.add_dependency(%q<sqlite3>, [">= 0"])
       s.add_dependency(%q<launchy>, ["~> 2.1.0"])
       s.add_dependency(%q<rcov>, [">= 0"])
@@ -106,6 +108,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rake>, [">= 0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
     s.add_dependency(%q<capybara>, [">= 0.4.0"])
+    s.add_dependency(%q<poltergeist>, [">= 0"])
     s.add_dependency(%q<sqlite3>, [">= 0"])
     s.add_dependency(%q<launchy>, ["~> 2.1.0"])
     s.add_dependency(%q<rcov>, [">= 0"])
