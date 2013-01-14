@@ -1,14 +1,16 @@
-# Sextant
+# Sextant [![Build Status](https://travis-ci.org/schneems/sextant.png?branch=master)](https://travis-ci.org/schneems/sextant)
 
-[![Build Status](https://travis-ci.org/schneems/sextant.png?branch=master)](https://travis-ci.org/schneems/sextant)
 
 Helps you find your routes on a long Journey on Rails, in Rails apps 3.2+.
+
+![Logo](http://cl.ly/image/0d122q3y0Q17/content.png)
+
 
 ## What
 
 Show routes in your Rails app while working in development. Visit `http://localhost:3000/rails/routes` and you'll see an output similar to `rake routes`
 
-![Sextant Gem](http://media.tumblr.com/tumblr_m42lwz86aB1qevexf.png)
+![Sextant Gem](http://cl.ly/image/3A1z290a3l0Z/content.png)
 
 
 ## The Future
