@@ -1,3 +1,6 @@
+## 0.2.2
+* Fix JS, explicitly set layout
+
 ## 0.2.1
 * Render without layout
 
