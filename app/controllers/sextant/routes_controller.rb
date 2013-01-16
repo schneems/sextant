@@ -1,5 +1,5 @@
 module Sextant
-  class RoutesController < ApplicationController
+  class RoutesController < Sextant::ApplicationController
     layout 'sextant/application'
 
     before_filter :require_local!
