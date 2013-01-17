@@ -1,3 +1,6 @@
+## 0.2.3
+* Be explicit about which ApplicationController we're using (Sextant)
+
 ## 0.2.2
 * Fix JS, explicitly set layout
 
