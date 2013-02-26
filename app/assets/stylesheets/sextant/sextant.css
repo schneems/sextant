@@ -30,11 +30,18 @@ a:hover {
 }
 
 .wrapper {
-	margin: auto;
-	width: 960px;
+  box-shadow: 0 0 10px #888888;
+  margin: 20px auto auto;
+  padding: 10px;
+  width: 940px;
+}
+
+h1 {
+  margin: 0;
 }
 
 #route_table {
+  border: 1px solid #CCCCCC;
   width: 100%;
 }
 
