@@ -7,5 +7,12 @@
 </p>
 
 <%= render layout: "route_wrapper" do %>
-  <%= render partial: "route", collection: @routes %>
+  <%= render partial: "route", collection: @routes[:main_app] %>
+
+  <% @routes[:engines].each do |name, routes| %>
+    <tr class="engine-title">
+      <td colspan="4">Routes for <%= name %></td>
+    </tr>
+    <%= render partial: "route", collection: routes %>
+  <% end %>
 <% end %>
