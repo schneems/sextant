@@ -22,6 +22,18 @@
     a { color: #000; }
     a:visited { color: #666; }
     a:hover { color: #fff; background-color:#000; }
+
+    table.route_table {
+      border-spacing:0;
+      border-collapse:collapse;
+    }
+    table.route_table th { border-bottom: 1px solid black}
+    table.route_table tr:nth-child(even) {background: #EEE}
+    table.route_table tr:nth-child(odd) {background: #FFF}
+    table.route_table tr:hover {
+      background-color: #333;
+      color:            #FFF;
+    }
   </style>
   <%= javascript_include_tag "sextant/application" %>
   <%= csrf_meta_tags %>
