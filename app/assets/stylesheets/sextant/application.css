@@ -1,0 +1,54 @@
+/*
+ * $fg_color:       #333;
+ * $bg_color:       #FFF;
+ * $fg_color_hover: $bg_color;
+ * $bg_color_hover: $fg_color;
+ * $table_color:    #999;
+ */
+
+body {
+  background-color: #FFF;
+  color:            #333;
+}
+
+body, p, ol, ul, td {
+  font-family:  helvetica, verdana, arial, sans-serif;
+  font-size:    13px;
+  line-height:  18px;
+}
+
+a,
+a:visited {
+  color: #333;
+}
+a:hover {
+  background-color: #333;
+  color:            #FFF;
+}
+
+table.route_table {
+  border: 1px solid #999;
+  border-spacing:   0;
+  border-collapse:  collapse;
+}
+table.route_table th {
+  border-bottom: 1px solid #999;
+  border: 1px solid #999;
+}
+table.route_table tbody tr:nth-child(even) {
+  background: #EEE
+}
+table.route_table tbody tr:nth-child(odd) {
+  background: #FFF
+}
+table.route_table tbody tr:hover {
+      background-color: #333;
+      color:            #FFF;
+}
+table.route_table td {
+    padding: 3px 10px;
+}
+table.route_table td+td {
+  border-left: 1px solid #DDD;
+}
+
