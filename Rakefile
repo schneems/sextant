@@ -31,20 +31,3 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('README.rdoc')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
-
-
-require 'jeweler'
-Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name        = "sextant"
-  gem.homepage    = "http://github.com/schneems/sextant"
-  gem.license     = "MIT"
-  gem.summary     = %Q{Use Sextant to show you the route}
-  gem.description = %Q{Sextant is a Rails engine that quickly shows the routes available}
-  gem.email       = "richard.schneeman@gmail.com"
-  gem.authors     = ["schneems"]
-  # dependencies defined in Gemfile
-end
-Jeweler::RubygemsDotOrgTasks.new
-
-

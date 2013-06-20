@@ -1,3 +1,14 @@
 language: ruby
 rvm:
   - 1.9.3
+  - 2.0.0
+
+env:
+  - "RAILS_VERSION=3.2.0"
+  - "RAILS_VERSION=4.0.0.pre"
+  - "RAILS_VERSION=master"
+
+matrix:
+  allow_failures:
+    - env: "RAILS_VERSION=master"
+    - rvm: ruby-head
