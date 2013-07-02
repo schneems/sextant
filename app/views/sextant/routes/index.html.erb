@@ -5,6 +5,11 @@
 <p>
   Routes match in priority from top to bottom
 </p>
+<div class="filter">
+	<%= form_tag '', method: 'get' do %>
+	  <%= select_tag(:controller_id, options_for_select(@controllers.collect{|a| [a, a]}, params[:id]), :prompt => "All routes", :onchange => "onChangeController();") %>
+	<% end %>
+</div>
 
 <%= render layout: "route_wrapper" do %>
   <%= render partial: "route", collection: @routes %>

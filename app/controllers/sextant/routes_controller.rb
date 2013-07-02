@@ -5,7 +5,10 @@ module Sextant
     before_filter :require_local!
 
     def index
-      @routes = Sextant.format_routes
+      # @controllers = ["All routes"]
+      @controllers = Dir[Rails.root.join('app/controllers/*_controller.rb')].map { |path| path.match(/(\w+)_controller.rb/); $1 }.compact
+      @routes = Sextant.format_routes(params[:id])
+      # render text: @controllers
     end
 
     private

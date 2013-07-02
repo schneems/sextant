@@ -11,9 +11,9 @@ module Sextant
     ROUTE_INSPECTOR = ActionDispatch::Routing::RoutesInspector.new([])
   end
 
-  def self.format_routes(routes = all_routes)
+  def self.format_routes(controller = nil, routes = all_routes)
     # ActionDispatch::Routing::RoutesInspector.new.collect_routes(_routes.routes)
-    ROUTE_INSPECTOR.send :collect_routes, routes
+    ROUTE_INSPECTOR.send :get_controller_routes, routes, controller
   end
 
   def self.all_routes
@@ -22,3 +22,16 @@ module Sextant
   end
 end
 
+
+module Rails
+  class Application
+    class RouteInspector
+      def get_controller_routes all_routes, filter = nil
+         if filter
+          all_routes = all_routes.select{ |route| route.defaults[:controller] == filter }
+        end
+        routes = collect_routes(all_routes)
+      end
+    end
+  end
+end

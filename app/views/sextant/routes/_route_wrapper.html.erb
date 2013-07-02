@@ -1,8 +1,16 @@
 <style type='text/css'>
   #route_table td {padding: 0 30px;}
   #route_table    {margin:  0 auto 0;}
+  .controller_head {font-size: 18px; font-weight: bold; padding-bottom: 20px; text-align: center;}
+  .filter{float: right;}
 </style>
-
+<div class="controller_head">
+  <% if params[:id] %>
+      <%= params[:id].singularize.classify %> Controller
+  <% else %>
+      All Routes
+  <% end %>
+</div>
 <table id='route_table' class='route_table'>
   <thead>
     <tr>

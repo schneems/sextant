@@ -26,3 +26,10 @@ function setupRouteToggleHelperLinks() {
     setValOn(helperElems, helperTxt);
   });
 }
+
+function onChangeController(){
+  var myselect = document.getElementById("controller_id");
+  var selected_val = myselect.options[myselect.selectedIndex].value
+  this.document.location.href = '/rails/routes/'+selected_val;
+  // alert(selected_val);
+}
