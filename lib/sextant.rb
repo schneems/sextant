@@ -35,3 +35,18 @@ module Rails
     end
   end
 end
+
+
+module ActionDispatch
+  module Routing
+    class RoutesInspector
+      def get_controller_routes all_routes, filter = nil
+         if filter
+          all_routes = all_routes.select{ |route| route.defaults[:controller] == filter }
+        end
+        routes = collect_routes(all_routes)
+      end 
+    end
+  end
+end
+
