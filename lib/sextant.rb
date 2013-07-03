@@ -20,6 +20,10 @@ module Sextant
     Rails.application.reload_routes!
     Rails.application.routes.routes
   end
+
+  def self.get_controllers
+    all_routes.collect{|route| route.defaults[:controller]}.uniq
+  end
 end
 
 

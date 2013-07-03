@@ -7,7 +7,7 @@
 </p>
 <div class="filter">
 	<%= form_tag '', method: 'get' do %>
-	  <%= select_tag(:controller_id, options_for_select(@controllers.collect{|a| [a, a]}, params[:id]), :prompt => "All routes", :onchange => "onChangeController();") %>
+	  <%= select_tag(:controller_id, options_for_select(@controllers.collect{|a| [a, CGI.escape(a.to_s) ]}, params[:id]), :prompt => "All routes", :onchange => "onChangeController();") %>
 	<% end %>
 </div>
 
