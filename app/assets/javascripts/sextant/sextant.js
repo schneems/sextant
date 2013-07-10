@@ -19,7 +19,7 @@ function onClick(elems, func) {
 
 // Enables functionality to toggle between `_path` and `_url` helper suffixes
 function setupRouteToggleHelperLinks() {
-  var toggleLinks = document.querySelectorAll('#route_table [data-route-helper]');
+  var toggleLinks = document.querySelectorAll('#example [data-route-helper]');
   onClick(toggleLinks, function(){
     var helperTxt   = this.getAttribute("data-route-helper");
     var helperElems = document.querySelectorAll('[data-route-name] span.helper');
