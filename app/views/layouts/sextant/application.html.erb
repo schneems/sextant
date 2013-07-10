@@ -3,15 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <title>Routes</title>
-  <%= stylesheet_link_tag "sextant/bootstrap" %>
-  <%= stylesheet_link_tag "sextant/data_table" %>
+  <%= stylesheet_link_tag "sextant/bootstrap","sextant/data_table" %>
   <%= javascript_include_tag "sextant/application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <div class="container-fluid" style="margin-top: 10px">
   <%= yield %>
-</div>
 </div>
 </body>
 </html>
