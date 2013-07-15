@@ -31,5 +31,12 @@ function setupRouteToggleHelperLinks() {
 function onChangeController(){
   var myselect = document.getElementById("controller_id");
   var selected_val = myselect.options[myselect.selectedIndex].value
-  this.document.location.href = '/rails/routes/'+selected_val;
+  all_routes = $('.route_row');
+  if(selected_val){
+    all_routes.hide()
+              .filter('[data-controller='+selected_val+']')
+              .show();
+  }else{
+    all_routes.show();
+  }
 }

@@ -7,9 +7,10 @@ module Sextant
     def index
       # @controllers = ["All routes"]
       # @controllers = Dir[Rails.root.join('app/controllers/*_controller.rb')].map { |path| path.match(/(\w+)_controller.rb/); $1 }.compact
-      @controllers = Sextant.get_controllers
+      @controllers = Sextant.get_controllers.compact
       @routes = Sextant.format_routes(params[:id])
-      # render text: @controllers
+      @rgx = /([\w\W]*)#/
+      # render text: @routes
     end
 
     private

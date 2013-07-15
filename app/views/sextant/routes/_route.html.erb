@@ -1,4 +1,4 @@
-<tr class='route_row' data-helper='path'>
+<tr class='route_row' data-helper='path' data-controller='<%= (route[:reqs].match @rgx)[1].gsub(/\//, '-') rescue nil %>'>
   <td data-route-name='<%= route[:name] %>'>
     <% if route[:name].present? %>
       <%= route[:name] %><span class='helper'>_path</span>
