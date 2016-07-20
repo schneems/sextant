@@ -10,10 +10,19 @@ module Sextant
       route = Sextant.format_routes[id][:reqs].split('#')
       
       classname, methodname = route
-      classname = (classname + '_controller').classify
+      classname = eval((classname + '_controller').classify)
 
-      file, line = eval(classname).instance_method(methodname.to_sym).source_location
+
+      file, line = classname.instance_method(methodname.to_sym).source_location
       @routeinfo = "Method '##{methodname}' is defined in #{file}, line #{line}"
+      
+#      p classname.method(methodname.to_sym).to_source
+      f = File.open(file, 'r')
+      p '###############################################################'
+      @file = f.each_line.to_a[(line-1)..-1].join(//)
+      f.close
+      
+
     end
 
   end
