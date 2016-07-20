@@ -15,13 +15,9 @@ module Sextant
 
       file, line = classname.instance_method(methodname.to_sym).source_location
       @routeinfo = "Method '##{methodname}' is defined in #{file}, line #{line}"
-      
-#      p classname.method(methodname.to_sym).to_source
-      f = File.open(file, 'r')
-      p '###############################################################'
-      @file = f.each_line.to_a[(line-1)..-1].join(//)
-      f.close
-      
+      require 'method_source'
+      @file = classname.instance_method(methodname.to_sym).source
+      @file = @file.gsub("\n", "<br>").html_safe
 
     end
 
