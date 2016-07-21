@@ -12,6 +12,6 @@ else
 end
 
 gem "rails", rails
-
+gem "method_source"
 
 gemspec

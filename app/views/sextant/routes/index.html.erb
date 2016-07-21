@@ -7,5 +7,5 @@
 </p>
 
 <%= render layout: "route_wrapper" do %>
-  <%= render partial: "route", collection: @routes %>
+  <%= render partial: "route", collection: @routes.each_with_index.map{ |x, i| x[:id] = i; x } %>
 <% end %>
