@@ -2,7 +2,7 @@ module Sextant
   class RoutesController < Sextant::ApplicationController
     layout 'sextant/application'
 
-    before_filter :require_local!
+    before_action :require_local!
 
     def index
       @routes = Sextant.format_routes
